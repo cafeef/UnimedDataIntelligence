@@ -28,17 +28,17 @@
     ('Arthur Alves', '0069958471509', 25, 'Masculino', 5, 'Coletivo', 'N/A', 'Nenhuma', 798.17, 0, 0, 1, 1, 9999, 0.0, 0.0372, False),
 ('Bernardo Martins', '0069416795194', 29, 'Masculino', 4, 'Individual', 'N/A', 'Nenhuma', 529.66, 0, 1, 1, 0, 9999, 1.0, 0.0181, False),
 ('Maria Ferreira', '0069380729510', 36, 'Feminino', 5, 'Coletivo', 'N/A', 'Nenhuma', 353.49, 0, 4, 1, 0, 9999, 0.25, 0.0683, False),
-('Heloísa Fernandes', '0069174025827', 57, 'Masculino', 5, 'Familiar', 'J42', 'Respiratório', 2202.11, 1, 8, 4, 4, 42, 0.5, 0.5705, True),
+('Heloísa Fernandes', '0069174025827', 57, 'Feminino', 5, 'Familiar', 'J42', 'Respiratório', 2202.11, 1, 8, 4, 4, 42, 0.5, 0.5705, True),
 ('Miguel Ribeiro', '0069921328911', 28, 'Masculino', 3, 'Familiar', 'N/A', 'Nenhuma', 353.94, 0, 0, 1, 0, 9999, 0.0, 0.0585, False),
-('Isabella Ferreira', '0069826683867', 36, 'Masculino', 4, 'Coletivo', 'N/A', 'Nenhuma', 791.38, 0, 0, 0, 0, 9999, 0.0, 0.0263, False),
+('Isabella Ferreira', '0069826683867', 36, 'Feminino', 4, 'Coletivo', 'N/A', 'Nenhuma', 791.38, 0, 0, 0, 0, 9999, 0.0, 0.0263, False),
 ('Laura Lopes', '0069656700721', 34, 'Feminino', 2, 'Individual', 'N/A', 'Nenhuma', 162.88, 0, 0, 0, 0, 9999, 0.0, 0.0441, False),
 ('Alice Silva', '0069496771961', 71, 'Feminino', 4, 'Familiar', 'E05', 'Endócrino/Metabólico', 1837.7, 1, 8, 2, 1, 149, 0.25, 0.0899, False),
 ('Heitor Lima', '0069309901266', 33, 'Masculino', 2, 'Individual', 'N/A', 'Nenhuma', 522.79, 0, 4, 1, 0, 9999, 0.25, 0.0231, False),
 ('Alice Almeida', '0069336289546', 50, 'Feminino', 2, 'Coletivo', 'I21', 'Circulatório', 2335.61, 1, 11, 3, 1, 187, 0.27, 0.2294, False),
-('Bernardo Pereira', '0069301363492', 67, 'Feminino', 1, 'Coletivo', 'J45', 'Respiratório', 571.6, 1, 4, 0, 0, 181, 0.0, 0.0208, False),
-('Helena Alves', '0069259928034', 45, 'Masculino', 0, 'Coletivo', 'C18', 'Cânceres', 1894.32, 4, 13, 2, 0, 210, 0.15, 0.2496, False),
-('Laura Souza', '0069116709232', 45, 'Masculino', 3, 'Familiar', 'C50', 'Cânceres', 1799.45, 2, 12, 5, 2, 164, 0.42, 0.4155, False),
-('Isabella Vieira', '0069245567515', 69, 'Masculino', 3, 'Familiar', 'J44', 'Respiratório', 5776.69, 2, 9, 6, 6, 173, 0.67, 0.3434, False),
+('Bernardo Pereira', '0069301363492', 67, 'Masculino', 1, 'Coletivo', 'J45', 'Respiratório', 571.6, 1, 4, 0, 0, 181, 0.0, 0.0208, False),
+('Helena Alves', '0069259928034', 45, 'Feminino', 0, 'Coletivo', 'C18', 'Cânceres', 1894.32, 4, 13, 2, 0, 210, 0.15, 0.2496, False),
+('Laura Souza', '0069116709232', 45, 'Feminino', 3, 'Familiar', 'C50', 'Cânceres', 1799.45, 2, 12, 5, 2, 164, 0.42, 0.4155, False),
+('Isabella Vieira', '0069245567515', 69, 'Feminino', 3, 'Familiar', 'J44', 'Respiratório', 5776.69, 2, 9, 6, 6, 173, 0.67, 0.3434, False),
 ('Samuel Costa', '0069272090423', 73, 'Masculino', 5, 'Familiar', 'C34', 'Cânceres', 1826.4, 0, 7, 0, 0, 9999, 0.0, 0.2145, False),
 ('Maria Alves', '0069560659792', 20, 'Feminino', 0, 'Coletivo', 'N/A', 'Nenhuma', 431.73, 0, 2, 0, 0, 9999, 0.0, 0.0161, False),
 ('João Vieira', '0069827971715', 54, 'Feminino', 3, 'Coletivo', 'N/A', 'Nenhuma', 178.89, 0, 3, 1, 0, 9999, 0.33, 0.0895, False),
@@ -1025,3 +1025,31 @@
 ('Davi Fernandes', '0069345212627', 67, 'Masculino', 0, 'Coletivo', 'C18', 'Cânceres', 5028.27, 3, 6, 3, 0, 239, 0.5, 0.2362, False),
 ('Helena Martins', '0069701655747', 38, 'Masculino', 0, 'Individual', 'N/A', 'Nenhuma', 712.53, 0, 3, 1, 1, 9999, 0.33, 0.0059, False),
 ('Sophia Lopes', '0069311491688', 47, 'Feminino', 1, 'Individual', 'N/A', 'Nenhuma', 629.15, 0, 4, 1, 0, 9999, 0.25, 0.0738, False);
+
+UPDATE Pacientes_ML
+SET Genero =
+    CASE
+        -- Nomes Femininos (Lista de Nomes + Terminação 'a')
+        WHEN Nome IN ('Helena Ferreira', 'Luísa Santos', 'Isabella Rodrigues', 'Júlia Lima', 'Manuela Rocha', 'Giovanna Costa', 'Sofia Pereira', 'Beatriz Silva', 'Valentina Alves', 'Mariana Oliveira', 'Laura Martins', 'Ana Souza', 'Clara Carvalho', 'Alice Mendes', 'Lívia Gomes', 'Cecília Barbosa', 'Elisa Fernandes', 'Maria Eduarda', 'Aurora Ferreira', 'Ester Souza', 'Amanda Campos', 'Camila Santos', 'Letícia Lima', 'Vitória Pereira', 'Nicole Rocha') OR Nome LIKE '%a'
+        THEN 'Feminino'
+
+        -- Nomes Masculinos (Lista de Nomes + Terminação 'o'/'r'/'l')
+        WHEN Nome IN ('Arthur Alves', 'Bernardo Silva', 'Heitor Soares', 'Miguel Almeida', 'Davi Pereira', 'Pedro Souza', 'Gabriel Lima', 'Samuel Costa', 'Daniel Rocha', 'João Martins', 'Enzo Carvalho', 'Guilherme Mendes', 'Rafael Gomes', 'Felipe Barbosa', 'Lucas Fernandes', 'Leonardo Campos', 'Nicolas Santos', 'Thiago Lima', 'Vinícius Pereira', 'Benício Rocha') OR Nome LIKE '%o' OR Nome LIKE '%r' OR Nome LIKE '%l'
+        THEN 'Masculino'
+
+        -- Gênero Incompatível com o Nome (Correções específicas para casos notados no snippet)
+        WHEN Nome = 'Luísa Santos' AND Genero = 'Masculino' THEN 'Feminino'
+        WHEN Nome = 'Miguel Almeida' AND Genero = 'Feminino' THEN 'Masculino'
+        WHEN Nome = 'Heitor Soares' AND Genero = 'Feminino' THEN 'Masculino'
+        WHEN Nome = 'Arthur Alves' AND Genero = 'Feminino' THEN 'Masculino'
+        
+        -- Mantém o valor original se não se enquadrar em nenhuma das regras de correção
+        ELSE Genero
+    END
+WHERE
+    -- Filtra apenas os registros onde a correção é necessária para otimização
+    (Nome IN ('Helena Ferreira', 'Luísa Santos', 'Isabella Rodrigues', 'Júlia Lima', 'Manuela Rocha', 'Giovanna Costa', 'Sofia Pereira', 'Beatriz Silva', 'Valentina Alves', 'Mariana Oliveira', 'Laura Martins', 'Ana Souza', 'Clara Carvalho', 'Alice Mendes', 'Lívia Gomes', 'Cecília Barbosa', 'Elisa Fernandes', 'Maria Eduarda', 'Aurora Ferreira', 'Ester Souza', 'Amanda Campos', 'Camila Santos', 'Letícia Lima', 'Vitória Pereira', 'Nicole Rocha') AND Genero != 'Feminino') OR
+    (Nome IN ('Arthur Alves', 'Bernardo Silva', 'Heitor Soares', 'Miguel Almeida', 'Davi Pereira', 'Pedro Souza', 'Gabriel Lima', 'Samuel Costa', 'Daniel Rocha', 'João Martins', 'Enzo Carvalho', 'Guilherme Mendes', 'Rafael Gomes', 'Felipe Barbosa', 'Lucas Fernandes', 'Leonardo Campos', 'Nicolas Santos', 'Thiago Lima', 'Vinícius Pereira', 'Benício Rocha') AND Genero != 'Masculino') OR
+    (Nome LIKE '%a' AND Genero != 'Feminino' AND Nome NOT IN ('Samuel', 'Daniel', 'Rafael')) OR -- Exceções de nomes masculinos que terminam em 'a'
+    ((Nome LIKE '%o' OR Nome LIKE '%r' OR Nome LIKE '%l') AND Genero != 'Masculino')
+    ;
