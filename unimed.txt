@@ -1,31 +1,4 @@
-
-    DROP TABLE IF EXISTS Pacientes_ML;
-    
-    -- Criação da tabela de pacientes para ML
-    CREATE TABLE Pacientes_ML (
-        ID INTEGER PRIMARY KEY,
-        Nome VARCHAR(255) NOT NULL,
-        Carteirinha VARCHAR(50) NOT NULL UNIQUE,
-        Idade INT,
-        Genero VARCHAR(15),
-        Dependentes INT,
-        TipoContrato VARCHAR(50),
-        CID VARCHAR(10),
-        CategoriaCID VARCHAR(50),
-        CustoMensal_12M DECIMAL(10, 2),
-        NumeroInternacoes_12M INT,
-        NumeroConsultas_12M INT,
-        NumeroConsultasEmergencia_12M INT,
-        ConsultasEmergencia_3M INT,
-        DiasDesdeUltimaInternacao INT,
-        ProporcaoEmergencias_12M DECIMAL(5, 2),
-        ProbabilidadeRisco DECIMAL(5, 4),
-        Reinternado_30_Dias BOOLEAN NOT NULL
-    );
-    
-    -- Inserção dos dados
-    INSERT INTO Pacientes_ML (Nome, Carteirinha, Idade, Genero, Dependentes, TipoContrato, CID, CategoriaCID, CustoMensal_12M, NumeroInternacoes_12M, NumeroConsultas_12M, NumeroConsultasEmergencia_12M, ConsultasEmergencia_3M, DiasDesdeUltimaInternacao, ProporcaoEmergencias_12M, ProbabilidadeRisco, Reinternado_30_Dias) VALUES
-    ('Arthur Alves', '0069958471509', 25, 'Masculino', 5, 'Coletivo', 'N/A', 'Nenhuma', 798.17, 0, 0, 1, 1, 9999, 0.0, 0.0372, False),
+('Arthur Alves', '0069958471509', 25, 'Masculino', 5, 'Coletivo', 'N/A', 'Nenhuma', 798.17, 0, 0, 1, 1, 9999, 0.0, 0.0372, False),
 ('Bernardo Martins', '0069416795194', 29, 'Masculino', 4, 'Individual', 'N/A', 'Nenhuma', 529.66, 0, 1, 1, 0, 9999, 1.0, 0.0181, False),
 ('Maria Ferreira', '0069380729510', 36, 'Feminino', 5, 'Coletivo', 'N/A', 'Nenhuma', 353.49, 0, 4, 1, 0, 9999, 0.25, 0.0683, False),
 ('Heloísa Fernandes', '0069174025827', 57, 'Feminino', 5, 'Familiar', 'J42', 'Respiratório', 2202.11, 1, 8, 4, 4, 42, 0.5, 0.5705, True),
@@ -1024,30 +997,4 @@
 ('Laura Souza', '0069735417608', 89, 'Masculino', 3, 'Coletivo', 'C61', 'Cânceres', 1166.23, 0, 3, 2, 0, 9999, 0.67, 0.3258, False),
 ('Davi Fernandes', '0069345212627', 67, 'Masculino', 0, 'Coletivo', 'C18', 'Cânceres', 5028.27, 3, 6, 3, 0, 239, 0.5, 0.2362, False),
 ('Helena Martins', '0069701655747', 38, 'Masculino', 0, 'Individual', 'N/A', 'Nenhuma', 712.53, 0, 3, 1, 1, 9999, 0.33, 0.0059, False),
-('Sophia Lopes', '0069311491688', 47, 'Feminino', 1, 'Individual', 'N/A', 'Nenhuma', 629.15, 0, 4, 1, 0, 9999, 0.25, 0.0738, False);
-
--- ATENÇÃO: Este comando altera diretamente os dados na sua tabela Pacientes_ML.
-
-UPDATE Pacientes_ML
-SET Genero =
-    CASE
-        -- 1. Regra para Nomes Femininos
-        -- Procura nomes conhecidos e nomes que terminam em 'a' (heurística comum)
-        WHEN Nome IN ('Helena Ferreira', 'Luísa Santos', 'Isabella Rodrigues', 'Júlia Lima', 'Manuela Rocha', 'Giovanna Costa', 'Sofia Pereira', 'Beatriz Silva', 'Valentina Alves', 'Mariana Oliveira', 'Laura Martins', 'Ana Souza', 'Clara Carvalho', 'Alice Mendes', 'Lívia Gomes', 'Cecília Barbosa', 'Elisa Fernandes', 'Maria Eduarda', 'Aurora Ferreira', 'Ester Souza', 'Amanda Campos', 'Camila Santos', 'Letícia Lima', 'Vitória Pereira', 'Nicole Rocha') OR Nome LIKE '%a'
-        THEN 'Feminino'
-
-        -- 2. Regra para Nomes Masculinos
-        -- Procura nomes conhecidos e nomes que terminam em 'o', 'r', ou 'l'
-        WHEN Nome IN ('Arthur Alves', 'Bernardo Silva', 'Heitor Soares', 'Miguel Almeida', 'Davi Pereira', 'Pedro Souza', 'Gabriel Lima', 'Samuel Costa', 'Daniel Rocha', 'João Martins', 'Enzo Carvalho', 'Guilherme Mendes', 'Rafael Gomes', 'Felipe Barbosa', 'Lucas Fernandes', 'Leonardo Campos', 'Nicolas Santos', 'Thiago Lima', 'Vinícius Pereira', 'Benício Rocha') OR Nome LIKE '%o' OR Nome LIKE '%r' OR Nome LIKE '%l'
-        THEN 'Masculino'
-
-        -- 3. Caso Padrão
-        -- Mantém o valor original se o nome for ambíguo ou não estiver nas listas
-        ELSE Genero
-    END
-WHERE
-    -- Opcional: Condições para corrigir os casos mais evidentes para otimizar a execução
-    (Nome IN ('Luísa Santos') AND Genero = 'Masculino') OR -- Correção específica do snippet
-    (Nome IN ('Heitor Soares', 'Arthur Alves') AND Genero = 'Feminino') OR -- Correções específicas do snippet
-    (Nome LIKE '%a' AND Genero != 'Feminino' AND Nome NOT IN ('Samuel', 'Daniel', 'Rafael')) OR
-    ((Nome LIKE '%o' OR Nome LIKE '%r' OR Nome LIKE '%l') AND Genero != 'Masculino');
+('Sophia Lopes', '0069311491688', 47, 'Feminino', 1, 'Individual', 'N/A', 'Nenhuma', 629.15, 0, 4, 1, 0, 9999, 0.25, 0.0738, False)
